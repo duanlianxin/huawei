@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = 'viewport' content="width = device-width" />
+		<link rel="stylesheet" href="/static/reset.css" />
+		<link rel="stylesheet" href="/static/iconfont.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />  
+		<link rel="stylesheet" href="index.css" />
+		<title>详情-华为商城</title>
+	</head>
+	<body>
+		<div class="detail-wrapper">
+			<div class="header">
+				<ul>
+					<li class="active">商品</li>
+					<li>评价</li>
+					<li>详情</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="product">
+					<div class="swiper-container">
+						<div class="swiper-wrapper"></div>
+					</div>
+				</div>
+				<div class="rate">
+					<img src="rate.png" alt="">
+				</div>
+				<div class="detail">
+					<img src="detail001.gif" alt="">
+					<img src="detail002.gif" alt="">
+				</div>
+				
+			</div>
+			<div class="footer">
+				<a href="/home/index.html" class="home">
+					<img src="home.png" alt="">
+					<span>首页</span>
+				</a>
+				<a href="#" class="service">
+					<img src="service.png" alt="">
+					<span>客服</span>
+				</a>
+				<a href="/cart/index.html" class="cart">
+					<img src="cart.png" alt="">
+					<span>购物车</span>
+					<span class='cart-total'></span>
+				</a>
+				<button class='btn-toggle'>加入购物车</button>	
+			</div>
+		</div>
+		<div class="dialog-wrapper">
+			<div class='dialog'>
+				<div class='dialog-title'>
+					<img src="" alt="" class='avatar' />
+					<div class='dialog-title-right'>
+						<span class='price'></span>
+						<span>已选: <i class='count'>1</i> 件</span>
+					</div>
+				</div>
+				<div class='count-wrapper'>
+					<span>数量：</span>
+					<span class='decrease disabled'>-</span>
+					<span class='count'>1</span>
+					<span class='increase'>+</span>
+				</div>
+				<button class='btn-ok'>确定</button>
+			</div>
+		</div>
+		<script src="/static/jQuery-3.4.0.js"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.js"></script> 
+		<script src="index.js"></script>
+	</body>
+</html>

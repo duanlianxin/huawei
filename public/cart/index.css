@@ -1,0 +1,220 @@
+.cart-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #f9f9f9;
+}
+/* 头部 */
+.header {
+	height: 41px;
+	width: 100%;
+	background-color: #fff;
+	flex-shrink: 0;
+	display: flex;	
+}
+.header>* {
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+}
+.header>a {
+	width: 45px;
+	margin-left: 10px;
+}
+.header>a>i.icon-back {
+	font-size: 18px;
+	color: #191919;
+}
+.header>h2 {
+	flex-grow: 1;
+	font-size: 20px;
+	font-weight: normal;
+}
+.header>span.s-edit {
+	flex-shrink: 0;
+	width: 45px;
+	margin-right: 20px;
+	color: #888;
+	font-size: 15px;
+}
+/* 中间 */
+.content {
+	flex-grow: 1;
+	overflow: auto;
+}
+/* 动态拼接的内容 */
+ul.list {
+	width: 351px;
+	margin-left: 12px;
+	margin-top: 8px;
+	display: none;
+}
+ul.list>li {
+	display: flex; 
+	align-items: center; 
+	position: relative;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-bottom: 5px;
+ }
+ul.list>li>i.checkbox { margin-left: 5px; flex-shrink: 0; }
+ul.list>li>i.checkbox.edit {display: none;}
+ul.list>li>a {
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+	overflow: hidden;
+	margin-left: 10px;
+}
+ul.list>li>a>img {
+	width: 83px;
+	height: 83px;
+	flex-shrink: 0;
+	margin-right: 10px;
+}
+ul.list>li>a>.product-info {
+	flex-grow: 1;
+}
+
+.product-info>h3 {
+	font-size: 13px;
+	color: #333;
+	margin-bottom: 5px;
+}
+.product-info>p {
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 10px;
+}
+.product-info>.price-wrapper {
+	font-size: 15px;
+	color: #BF1111 ;
+}
+/* 数量加减 */
+ul.list>li>.count-wrapper {
+	position: absolute;
+	right: 0;
+	bottom: 15px;
+}
+ul.list>li>.count-wrapper>span {
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+ul.list>li>.count-wrapper>span.count { 
+	font-size: 12px;
+	background-color: rgba(0,0,0,0.05);
+}
+ul.list>li>.count-wrapper>span.disabled { color: rgba(0,0,0,0.1); }
+
+/* 如果购物车没有东西友情提示 */
+.empty-cart {
+	text-align: center;
+	margin-top: 40px;
+	display: none;
+}
+.empty-cart>img {
+	width: 104px;
+	height: 104px;
+}
+.empty-cart>p {
+	font-size: 14px;
+	color: #999;
+	padding-top: 8px;
+	padding-bottom: 15px;
+}
+.empty-cart>a {
+	color: #666;
+	font-size: 13px;
+	border: 2px solid #ccc;
+	padding: 6px 25px;
+	border-radius: 20px;
+}
+/* 如果未登录友情提示 */
+.unlogin{
+	text-align: center;
+	margin-top: 40px;
+	display: none;
+}
+.unlogin>img {
+	width: 104px;
+	height: 104px;
+}
+.unlogin>p {
+	font-size: 14px;
+	color: #999;
+	padding-top: 8px;
+	padding-bottom: 15px;
+}
+.unlogin>a {
+	color: #666;
+	font-size: 13px;
+	border: 2px solid #ccc;
+	padding: 6px 25px;
+	border-radius: 20px;
+}
+/* 页脚 */
+.footer {
+	height: 54px;
+	flex-shrink: 0;
+}
+.edit {
+	display: none;
+}
+/* 选择框 */
+i.checkbox {
+	display: inline-block;
+	width: 18px; height: 18px;
+	background-image: url(uncheck.png);
+	background-size: 100% 100%;
+}
+i.checkbox.checked {
+	background-image: url(check.png);
+}
+/* 页脚左边 */
+.all-wrapper {
+	float: left;
+	padding: 0 10px;
+	height: 100%;
+	line-height: 54px;
+	font-size: 13px;
+	color: #333;
+}
+.all-wrapper>* {
+	vertical-align: middle;
+}
+/* 页脚中间 */
+.account-wrapper {
+	float: left;
+	height: 54px;
+	line-height: 54px;
+	margin-right: 15px;
+	
+}
+.account-wrapper>* { vertical-align: middle; }
+.account-wrapper>span{
+	font-size: 14px;
+}
+.account-wrapper>span.account {
+	font-style: normal; color: #BF1111;
+}
+/* 页脚右边 */
+button {
+	float: right;
+	margin-right: 10px;
+	margin-top: 12px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #BF1111;
+	color: white;
+	border-radius: 15px;
+}
+span.total {
+	margin-left: 8px;
+}
+.footer>button.disabled { background-color: #b0b0b0; }

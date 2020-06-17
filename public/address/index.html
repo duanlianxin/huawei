@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name = 'viewport' content="width = device-width" />
+		<link rel="stylesheet" href="/static/reset.css" />
+		<link rel="stylesheet" href="/static/iconfont.css" />
+		<link rel="stylesheet" href="/static/Validform.css" />
+		<link rel="stylesheet" href="/static/cityPicker.css" />
+		<link rel="stylesheet" href="index.css" />
+
+		<title>地址管理-华为商城</title>
+	</head>
+	<body>
+		<div class="page-wrapper list">
+			<div class="header">
+				<a href="/personal/index.html">
+					<i class="iconfont icon-fanhui1"></i>
+				</a>
+				<h1>收货地址</h1>
+			</div>
+			<div class="content">
+				<div class='address-list'>
+					<ul></ul>
+				</div>
+				<div class='address-empty'>
+					<img src="address-empty.png" alt="" />
+					<p>您没有收货地址</p>
+				</div>
+			</div>
+			<button class='btn-add'>+ 新增收货地址</button>
+		</div>
+		<div class="page-wrapper edit">
+			<div class="header">
+				<h1>添加收货地址</h1>
+			</div>
+			<div class="content">
+				<form action="" class="aaa">
+					<div class="form-item">
+						<label for="">收货人</label>
+						<input type="text" class='name' datatype='*' nullmsg='请输入收货人'  placeholder="请输入收货人名称" />
+					</div>
+					<div class="form-item">
+						<label for="">手机号码</label>
+						<input type="text" class='phone' datatype='m' nullmsg='请输入手机号' errormsg='手机号无效' placeholder="请输入收货人手机号" />
+					</div>
+					<div class="form-item">
+						<label for="">所在地区</label>
+						<input type="text" class='region' placeholder="请输入收货人所在地" />
+					</div>
+					<div class="form-item">
+						<label for="">详细地址</label>
+						<input type="text" class='detail' datatype='s5-16' nullmsg='请输入地址' errormsg='地址长度大于5' placeholder="请输入收货人详细地址" />
+					</div>
+				</form>
+				<button class='btn-remove' >删除收货地址</button>
+				<button class='btn-cancel'>取消</button>
+				<button class='btn-save'>确认</button>
+			</div>
+		</div>
+		<script src="/static/jQuery-3.4.0.js"></script>
+		<script src="/static/Validform_v5.3.2.js"></script>
+		<script src="/static/cityPicker.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

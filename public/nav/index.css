@@ -1,0 +1,30 @@
+ul.nav {
+	height: 100%;
+	display: flex;
+	
+}
+
+ul.nav>li {
+	flex-grow:1;
+	flex-basis: 0;
+}
+ul.nav>li>a {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+}
+ul.nav>li>a>span {
+	font-size: 12px;
+}
+ul.nav>li>a>i {
+	width: 24px;
+	height: 24px;
+	font-size: 24px;
+}
+ul.nav>li.active>a {
+	color: red;
+}

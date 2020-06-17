@@ -1,0 +1,82 @@
+.page-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	height: 42px;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header>a>i.icon-fanhui1,i.icon-ShoppingCart {
+	font-size: 24px;
+	color: #333;
+	margin: 0 15px;
+}
+.header>h3 {
+	font-size: 18px;
+	color: #191919;
+}
+.iscroll-wrapper {
+	flex-grow: 1;
+	overflow: auto;
+}
+.nav-wrapper {
+	overflow: hidden;
+	touch-action: pan-x;
+}
+ul.nav { white-space: nowrap; font-size: 0;}
+ul.nav>li { 
+	display: inline-block;
+	padding: 10px 35px;
+	font-size: 16px;
+	position: relative;
+}
+ul.nav>li:after {
+	content: '';
+	position: absolute;
+	left: 50%; bottom: 0;
+	transform: translateX(-50%);
+	border: 1px solid #BF1111;
+	width: 0;
+	transition: all 0.4s;
+	
+}
+ul.nav>li.active {
+	color: #BF1111;
+}
+ul.nav>li.active:after {
+	width: 20%;
+}
+.content-wrapper {
+	overflow: auto;
+	touch-action: pan-x;
+	margin-top: 10px;
+}
+.content {
+	display: flex;
+}
+.content>div {
+	width: 100%;
+	flex-grow: 1;
+	height: 1200px;
+}
+ul.fullOrders-list>li {
+	margin: 10px 10px;
+	padding: 5px 0;
+	border-top: 2px solid #f8f8f8;
+}
+ul.paid-list>li {
+	margin: 10px 10px;
+	padding: 5px 0;
+	border-top: 2px solid #f8f8f8;
+}
+
+ul.obligation-list>li {
+	margin: 10px 10px;
+	padding: 5px 0;
+	border-top: 2px solid #f8f8f8;
+}

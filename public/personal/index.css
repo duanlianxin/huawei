@@ -1,0 +1,138 @@
+.page-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #f8f8f8;
+}
+.top {
+	height: 200px;
+	flex-shrink: 0;
+	background-color: #e12a2e;
+	border-radius: 0 0 80px 80px;
+	padding-left: 20px;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.top>* {
+	
+	vertical-align: middle;
+}
+.top>img {
+	width: 62px;
+	height: 62px;
+	margin-right: 10px;
+}
+.top>.login {
+	display: inline-block;
+	font-size: 0;
+}
+.top>.login>a>span {
+	color: #fff;
+	font-size: 20px;
+}
+.top>.login>a>p {
+	margin-top: 10px;
+	color: #fff;
+	font-size: 12px;
+}
+.top>.m-property {
+	height: 70px;
+	
+    text-align: center;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-right: 15px;
+	margin-top: 40px;
+}
+.top>.m-property>ul {
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+    padding: 10px 0;
+    background-color: #fff;
+	border-radius: 10px;
+}
+.top>.m-property>ul>li {
+	
+}
+.top>.m-property>ul>li>p.m-num {
+	color: #444;
+	font-size: 16px;
+}
+.top>.m-property>ul>li>p.title {
+	color: #666;
+	font-size: 14px;
+}
+.content {
+	flex-grow: 1;
+	overflow: auto;
+}
+.order {
+	background-color: #fff;
+	margin: 10px 20px;
+	box-sizing: border-box;
+	border-radius: 8px;
+    padding: 0 8px;
+}
+.order>a {
+	display: inline-block;
+	font-size: 0;
+	height: 41px;
+}
+.order>a>span {
+	color: #333;
+	font-size: 14px;
+	line-height: 41px;
+}
+.order>ul {
+	display: flex;
+   justify-content: space-around;
+  
+}
+.order>ul>li{
+	
+}
+.order>ul>li>a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.order>ul>li>a>i.icon{
+	color: #666;
+	font-size: 20px;
+	
+}
+.order>ul>li>a>span{
+	color: #666;
+	font-size: 12px;
+}
+.order>img{
+	width: 320px;
+	height: 93px;
+	margin-bottom: 10px;
+	
+}
+.aaa {
+	background-color: #fff;
+	margin: 10px 20px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 0 8px;
+}
+.aaa>img {
+	width: 335px;
+	text-align: center;
+}
+/* 页脚 */
+.footer {
+	height: 52px;
+	flex-shrink: 0;
+}
+
+.footer>iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}

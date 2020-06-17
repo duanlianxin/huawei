@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = 'viewport' content="width = device-width" />
+		<link rel="stylesheet" href="/static/reset.css" />
+		<link rel="stylesheet" href="../static/iconfont.css" />
+		<link rel="stylesheet" href="index.css" />
+		<title>购物车-华为商城</title>
+	</head>
+	<body>
+		<div class="cart-wrapper">
+			<div class="header">
+				<a href="#" class="back">
+					<i class="iconfont icon-fanhui1"></i>
+				</a>
+				<h2>购物车</h2>
+				<span class="s-edit">编辑</span>
+			</div>
+			<div class="content">
+				<ul class='list'></ul>
+				<div class='empty-cart'>
+					<img src="cart-empty.png" alt="" />
+					<p>您的购物车没有商品</p>
+					<a href="/category/index.html">去购物 </a>
+				</div>
+				<div class='unlogin'>
+					<img src="cart-empty.png" alt="" />
+					<p>登录后才能看到商品哦~</p>
+					<a href="/login/index.html">立即登录</a>
+				</div>
+			</div>
+			<div class="footer edit">
+				<div class="all-wrapper">
+					<i class='checkbox all edit'></i>
+					<span>全选</span>
+				</div>
+				<button  class='btn-remove disabled'>
+					删除<span class='total-edit'></span>
+				</button>
+			</div>
+			<div class="footer ok">
+				<div class="all-wrapper">
+					<i class='checkbox all ok checked'></i>
+					<span>全选</span>
+				</div>
+				<div class="account-wrapper">
+					<span>合计</span>
+					<span class="account"></span>
+				</div>
+				<button class="btn-settlement">
+					结算<span class="total"></span>
+				</button>
+			</div>
+		</div>
+		<script src="/static/jQuery-3.4.0.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
